@@ -1,0 +1,9 @@
+.cursor{
+height: 32px;
+width: 32px;
+background-color: blue;
+border-radius: 50%;
+position: absolute;
+top: 0;
+left: 0;
+}
