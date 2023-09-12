@@ -7,10 +7,8 @@ export default function Cursor() {
     x: 0,
     y: 0,
   });
-  console.log(position);
   useEffect(() => {
     const mouseMove = (e) => {
-      console.log(e.clientX);
       setPosition({
         x: e.clientX,
         y: e.clientY
