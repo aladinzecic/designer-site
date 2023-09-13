@@ -1,0 +1,36 @@
+.main {
+  height: 300vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+
+}
+
+.left {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left:0;
+  background-color: black;
+}
+
+.right {
+  width: 50%;
+  height: 100vh;
+  border: 1px solid white;
+  margin-left: auto;
+}
+.img-div {
+  height: 600px;
+  width: 400px;
+  overflow: hidden;
+}
+.img-div img {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+}

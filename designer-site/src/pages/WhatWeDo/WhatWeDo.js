@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./WhatWeDo.css";
 export default function WhatWeDo() {
-  const [isHovered, setIsHovered] = useState(4);
+  const [isHovered, setIsHovered] = useState(0);
   useEffect(() => {
     console.log(isHovered);
   });
@@ -74,7 +74,7 @@ export default function WhatWeDo() {
         onMouseLeave={() => setIsHovered(0)}
       >
         <h1>VISUAL & VERBAL IDENTITIES</h1>
-        {isHovered == 4 && (
+        {isHovered === 4 && (
           <>
             <p className="font">*</p>
             <h1>VISUAL & VERBAL IDENTITIES</h1>

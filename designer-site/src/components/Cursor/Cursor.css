@@ -3,7 +3,7 @@ height: 32px;
 width: 32px;
 background-color: blue;
 border-radius: 50%;
-position: absolute;
+position: fixed;
 top: 0;
 left: 0;
 z-index: 10000;
