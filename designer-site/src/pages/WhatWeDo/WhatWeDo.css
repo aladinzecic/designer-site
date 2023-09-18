@@ -30,7 +30,7 @@
   width: 100vw;
 }
 .line:hover {
-  background-color: blue;
+  background-color: #2596be;
   justify-content: start;
 }
 .line:hover h1{
@@ -40,60 +40,60 @@ font-stretch: extra-expanded;}
   width: 217vw;
 }
 .line1:hover h1 {
-  animation: leftone 5s linear infinite,transform 0s;
+  animation: leftone 10s linear infinite,transform 0s;
 }
 .line1:hover p {
-  animation: leftone 5s linear infinite;
+  animation: leftone 10s linear infinite;
 }
 
 .line2:hover {
   width: 226vw;
 }
 .line2:hover h1 {
-  animation: lefttwo 5s linear infinite;
+  animation: lefttwo 10s linear infinite;
 }
 .line2:hover p {
-  animation: lefttwo 5s linear infinite;
+  animation: lefttwo 10s linear infinite;
 }
 
 .line3:hover {
   width: 210vw;
 }
 .line3:hover h1 {
-  animation: leftthree 5s linear infinite;
+  animation: leftthree 10s linear infinite;
 }
 .line3:hover p {
-  animation: leftthree 5s linear infinite;
+  animation: leftthree 10s linear infinite;
 }
 
 .line4:hover {
   width: 210vw;
 }
 .line4:hover h1 {
-  animation: leftfour 5s linear infinite;
+  animation: leftfour 10s linear infinite;
 }
 .line4:hover p {
-  animation: leftfour 5s linear infinite;
+  animation: leftfour 10s linear infinite;
 }
 
 .line5:hover {
   width: 210vw;
 }
 .line5:hover h1 {
-  animation: leftfive 5s linear infinite;
+  animation: leftfive 10s linear infinite;
 }
 .line5:hover p {
-  animation: leftfive 5s linear infinite;
+  animation: leftfive 10s linear infinite;
 }
 
 .line6:hover {
   width: 206vw;
 }
 .line6:hover h1 {
-  animation: leftsix 5s linear infinite;
+  animation: leftsix 10s linear infinite;
 }
 .line6:hover p {
-  animation: leftsix 5s linear infinite;
+  animation: leftsix 10s linear infinite;
 }
 .line p {
   font-size: 80px;

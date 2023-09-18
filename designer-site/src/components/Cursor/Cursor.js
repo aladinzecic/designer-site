@@ -35,8 +35,8 @@ export default function Cursor() {
 
   const variants = {
     default: {
-      x: position.x - 16,
-      y: position.y - 16,
+      x: position.x - 8,
+      y: position.y - 8,
     },
     hover: {
       x: position.x,

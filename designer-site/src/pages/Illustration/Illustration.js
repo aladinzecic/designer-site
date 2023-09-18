@@ -13,9 +13,31 @@ export default function Illustration() {
         </div>
       </div>
       <div className="right-side">
-        <div className="right"></div>
-        <div className="right"></div>
-        <div className="right"></div>
+        <div className="right">
+          <h4>PART I</h4>
+          <h1>ILLUMINATION</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div className="right">
+          <h4>PART II</h4>
+          <h1>REVELATION</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div className="right">
+          <h4>PART III</h4>
+          <h1>CREATION</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
       </div>
       {/* <div className="left">
           <div className="img-div">
