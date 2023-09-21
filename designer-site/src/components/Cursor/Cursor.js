@@ -16,20 +16,11 @@ export default function Cursor() {
       });
     };
 
-    const scrollUpdate = () => {
-      // Update cursor position when scrolling
-      setPosition((prevPosition) => ({
-        x: prevPosition.x + window.scrollX,
-        y: prevPosition.y + window.scrollY,
-      }));
-    };
 
     window.addEventListener("mousemove", updatePosition);
-    window.addEventListener("scroll", scrollUpdate);
 
     return () => {
       window.removeEventListener("mousemove", updatePosition);
-      window.removeEventListener("scroll", scrollUpdate);
     };
   }, []);
 
