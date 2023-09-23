@@ -1,5 +1,8 @@
 
-
+.Loading{
+  overflow-y: hidden;
+  height: 100vh;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

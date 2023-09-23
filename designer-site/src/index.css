@@ -2,13 +2,15 @@
   cursor: none;
 }
 body {
-  cursor: none;
+  /* cursor: none; */
   cursor: pointer;
   margin: 0;
   font-family: 'Bebas Neue', sans-serif;
       -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  width: 100vw;
+  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 code {
