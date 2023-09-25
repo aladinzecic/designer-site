@@ -115,11 +115,11 @@ export default function WhatWeDo() {
         {isHovered === 6 && (
           <>
             <p className="font">*</p>
-          <h1>BRAND BOOKS & GUIDELINES</h1>
+            <h1>BRAND BOOKS & GUIDELINES</h1>
             <p className="font">*</p>
-          <h1>BRAND BOOKS & GUIDELINES</h1>
+            <h1>BRAND BOOKS & GUIDELINES</h1>
             <p className="font">*</p>
-          <h1>BRAND BOOKS & GUIDELINES</h1>
+            <h1>BRAND BOOKS & GUIDELINES</h1>
           </>
         )}
       </div>

@@ -7,7 +7,7 @@
   align-items: center;
   position: absolute;
   z-index: 10000000;
-  animation: right 0.6s ease-in 10s forwards;
+  animation: right 0.7s ease-in 2.5s forwards;
 }
 .loading-img {
   width: 25%;
@@ -15,37 +15,51 @@
   height: 350px;
   display: flex;
   align-items: center;
+  position: absolute;
 }
 svg:nth-child(1) {
   width: 100%;
 }
-.sister path {
+.loading-img path {
   animation: up 0.4s linear forwards;
   visibility: hidden;
 }
-path:nth-child(1) {
+.loading-img path:nth-child(1) {
   animation-delay: 0.1s;
 }
-path:nth-child(2) {
+.loading-img path:nth-child(2) {
   animation-delay: 0.2s;
 }
-path:nth-child(3) {
+.loading-img path:nth-child(3) {
   animation-delay: 0.3s;
 }
-path:nth-child(4) {
+.loading-img path:nth-child(4) {
   animation-delay: 0.4s;
 }
-path:nth-child(5) {
+.loading-img path:nth-child(5) {
   animation-delay: 0.5s;
 }
-path:nth-child(6) {
+.loading-img path:nth-child(6) {
   animation-delay: 0.6s;
 }
-#mary{
-    stroke-dasharray:595 ;
-    animation:2s handwriting  linear;
+.second {
+  width: 25%;
+  overflow: hidden;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
-
+#mary {
+  margin-bottom: 50px;
+}
+#mary path {
+  scale: 1.25;
+  stroke: white;
+  stroke-width: 7;
+  stroke-dasharray: 876;
+  animation: 1s handwriting linear forwards;
+}
 @keyframes up {
   100% {
     transform: translateY(-10px);
@@ -59,9 +73,9 @@ path:nth-child(6) {
 }
 @keyframes handwriting {
   0% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 876;
   }
-  100%{
-    stroke-dashoffset: 595;
+  100% {
+    stroke-dashoffset: 0;
   }
 }

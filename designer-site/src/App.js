@@ -10,7 +10,7 @@ function App() {
 useEffect(()=>{
 setTimeout(()=>{
   setIsLoading(false)
-},2000)
+},3200)
 },[])
   return (
     <div className={isLoading?"Loading":"App"} >
