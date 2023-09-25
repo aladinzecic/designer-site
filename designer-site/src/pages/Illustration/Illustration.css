@@ -17,6 +17,10 @@ display: flex;
   left:0;
   background-color: black;
 }
+.left .img-div{
+  width: 80%;
+}
+
 .right-side{
   height: 300vh;
   width: 50%;
@@ -44,7 +48,7 @@ display: flex;
 .right p{
   color: #fff;
   height: 0px;
-  width: 200px;
+  width: 350px;
   text-align: center;
 }
 .img-div {

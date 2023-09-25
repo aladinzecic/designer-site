@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import "./Illustration.css";
-import { motion } from "framer-motion";
 export default function Illustration() {
+  const [scroll, setScroll] = useState(1);
+  window.onscroll = function (e) {
+    console.log(window.scrollY);
+    if (window.scrollY < 900) {
+      setScroll(1);
+      console.log(scroll);
+    } else if (window.scrollY < 1600) {
+      setScroll(2);
+      console.log(scroll);
+    } else {
+      setScroll(3);
+      console.log(scroll);
+    }
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setVisible("visible");
+    }, 1200);
+  }, scroll);
   return (
     <div className="main">
       <div className="left">
         <div className="img-div">
-          <img
-            src="https://i.pinimg.com/1200x/60/75/be/6075be0540d4ef33b9d4859d0f60072a.jpg"
-            alt="slika"
-          ></img>
+          {scroll === 1 ? (
+            <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64bfd0ae75299ea875c11394_Creation_illustration_Revised.svg"></img>
+          ) : scroll === 2 ? (
+            <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64bfd0ae75299ea875c11394_Creation_illustration_Revised.svg"></img>
+          ) : (
+            <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64bfd0ae75299ea875c11394_Creation_illustration_Revised.svg"></img>
+          )}
         </div>
       </div>
       <div className="right-side">
@@ -17,27 +39,28 @@ export default function Illustration() {
           <h4>PART I</h4>
           <h1>ILLUMINATION</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            First we seek enlightenment. We’ll uncover the opportunity for your
+            brand, define your unique proposition, and divine ways for you to
+            stand out amongst your competitors.
           </p>
         </div>
         <div className="right">
           <h4>PART II</h4>
           <h1>REVELATION</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Now, the epiphany. A deceptively simple creative idea brought forth
+            to guide your brand experience and set down the principles against
+            which all shall be judged.
           </p>
         </div>
         <div className="right">
           <h4>PART III</h4>
           <h1>CREATION</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The final act. Through intelligent design, we bring your brand to
+            life wherever devotees gather.
           </p>
         </div>
-
       </div>
       {/* <div className="left">
           <div className="img-div">

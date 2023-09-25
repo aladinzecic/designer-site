@@ -58,7 +58,7 @@ svg:nth-child(1) {
   stroke: white;
   stroke-width: 7;
   stroke-dasharray: 876;
-  animation: 1s handwriting linear forwards;
+  animation: 0.8s handwriting linear forwards;
 }
 @keyframes up {
   100% {
