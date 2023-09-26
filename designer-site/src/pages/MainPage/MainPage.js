@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Main.css";
 import image from "../../assets/img1.png";
+import { motion } from "framer-motion";
 export default function MainPage() {
   function refreshPage() {
     window.location.reload();
+  }
+  const [inView,setInView]=useState(false);
+
+  const variants={
+    initial:{
+      y:130,
+    },
+    animate:{
+      y:0,
+    }
   }
   return (
     <div className="hero-div">
@@ -70,17 +81,34 @@ export default function MainPage() {
 </svg>
 
       </div>
-      <div className="lines lineOne">
-        <h1>THE POWER</h1>
+      <motion.div className="lines lineOne" whileInView={()=>{setInView(true)}}>
+        <motion.h1
+        variants={variants}
+        initial="initial"
+        animate={inView?"animate":"initial"}
+        transition={{
+          ease: "linear",
+          duration: 0.3,
+          delay:3
+        }}
+        >THE POWER</motion.h1>
+      </motion.div>
+      <div className="liness">
+        <motion.p
+        variants={variants}
+        initial="initial"
+        animate={inView?"animate":"initial"}
+        transition={{
+          ease: "linear",
+          duration: 0.3,
+          delay:3.1
+        }}>OF ART</motion.p>
+      </div>
+      <div className="lines lineThree">
+        <motion.h1>THE BEAUTY</motion.h1>
       </div>
       <div className="liness">
-        <p>OF ART</p>
-      </div>
-      <div className="lines">
-        <h1>THE BEAUTY</h1>
-      </div>
-      <div className="liness">
-        <p>OF IDEAS</p>
+        <motion.p>OF IDEAS</motion.p>
       </div>
     </div>
   );

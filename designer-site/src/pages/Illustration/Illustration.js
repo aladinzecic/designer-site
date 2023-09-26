@@ -1,34 +1,37 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Illustration.css";
 export default function Illustration() {
   const [scroll, setScroll] = useState(1);
-  window.onscroll = function (e) {
-    console.log(window.scrollY);
-    if (window.scrollY < 900) {
-      setScroll(1);
-      console.log(scroll);
-    } else if (window.scrollY < 1600) {
-      setScroll(2);
-      console.log(scroll);
-    } else {
-      setScroll(3);
-      console.log(scroll);
-    }
-  };
-
   useEffect(() => {
-    setTimeout(() => {
-      setVisible("visible");
-    }, 1200);
-  }, scroll);
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY < 900) {
+        setScroll(1);
+      } else if (scrollY < 1600) {
+        setScroll(2);
+      } else {
+        setScroll(3);
+      }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="main">
       <div className="left">
         <div className="img-div">
           {scroll === 1 ? (
-            <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64bfd0ae75299ea875c11394_Creation_illustration_Revised.svg"></img>
+            <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64ba9142443f47cb0594a5f9_Illumination_illustration.svg"></img>
           ) : scroll === 2 ? (
-            <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64bfd0ae75299ea875c11394_Creation_illustration_Revised.svg"></img>
+            <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64ba9142207f66103ef37397_Creation_illustration.svg"></img>
           ) : (
             <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64bfd0ae75299ea875c11394_Creation_illustration_Revised.svg"></img>
           )}
