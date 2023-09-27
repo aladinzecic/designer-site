@@ -1,0 +1,31 @@
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+.menu,
+.contacts {
+  height: 5vh;
+  margin-top: 2.5vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  z-index: 2222222;
+}
+.navbar h2 {
+  margin-top: 0;
+  color: white;
+}
+.menu :nth-child(2),
+.contacts :nth-child(2) {
+  margin-top: -20px;
+}
+
+.navbar svg {
+  margin-top: 2vh;
+  height: 6vh;
+  width: 500px;
+  z-index: 555555;
+}

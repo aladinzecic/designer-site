@@ -5,10 +5,13 @@
 }
 .hero {
   overflow: hidden;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.hero h3{
+  margin: auto;
 }
 .font {
   font-family: "Shadows Into Light", cursive;
@@ -40,60 +43,60 @@ font-stretch: extra-expanded;}
   width: 217vw;
 }
 .line1:hover h1 {
-  animation: leftone 10s linear infinite,transform 0s;
+  animation: leftone 16s linear infinite,transform 0s;
 }
 .line1:hover p {
-  animation: leftone 10s linear infinite;
+  animation: leftone 16s linear infinite;
 }
 
 .line2:hover {
   width: 226vw;
 }
 .line2:hover h1 {
-  animation: lefttwo 10s linear infinite;
+  animation: lefttwo 16s linear infinite;
 }
 .line2:hover p {
-  animation: lefttwo 10s linear infinite;
+  animation: lefttwo 16s linear infinite;
 }
 
 .line3:hover {
   width: 210vw;
 }
 .line3:hover h1 {
-  animation: leftthree 10s linear infinite;
+  animation: leftthree 16s linear infinite;
 }
 .line3:hover p {
-  animation: leftthree 10s linear infinite;
+  animation: leftthree 16s linear infinite;
 }
 
 .line4:hover {
   width: 210vw;
 }
 .line4:hover h1 {
-  animation: leftfour 10s linear infinite;
+  animation: leftfour 16s linear infinite;
 }
 .line4:hover p {
-  animation: leftfour 10s linear infinite;
+  animation: leftfour 16s linear infinite;
 }
 
 .line5:hover {
   width: 210vw;
 }
 .line5:hover h1 {
-  animation: leftfive 10s linear infinite;
+  animation: leftfive 16s linear infinite;
 }
 .line5:hover p {
-  animation: leftfive 10s linear infinite;
+  animation: leftfive 16s linear infinite;
 }
 
 .line6:hover {
   width: 206vw;
 }
 .line6:hover h1 {
-  animation: leftsix 10s linear infinite;
+  animation: leftsix 16s linear infinite;
 }
 .line6:hover p {
-  animation: leftsix 10s linear infinite;
+  animation: leftsix 16s linear infinite;
 }
 .line p {
   font-size: 80px;

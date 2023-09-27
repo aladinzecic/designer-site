@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "./WhatWeDo.css";
+import { transform } from "framer-motion";
+import { motion } from "framer-motion";
 export default function WhatWeDo() {
   const [isHovered, setIsHovered] = useState(0);
   useEffect(() => {
     console.log(isHovered);
   });
+
   return (
     <div className="hero">
+      <h3>what we do</h3>
       <div
         className="line line1"
         onMouseEnter={() => setIsHovered(1)}
         onMouseLeave={() => setIsHovered(0)}
       >
-        <h1>BRAND & CREATIVE STRATEGY</h1>
+        <h1
+        
+        >BRAND & CREATIVE STRATEGY</h1>
         {isHovered === 1 && (
           <>
             <p className="font">*</p>
