@@ -6,7 +6,7 @@ import { AppContext } from "../../Context/AppContext";
 export default function MainPage() {
   const [inView, setInView] = useState(false);
 
-  const [isRefreshed, setIsRefreshed] = useState(false);
+  const {isRefreshed } = useContext(AppContext);
 
 
   const variants1 = {
