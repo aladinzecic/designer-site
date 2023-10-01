@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useContext } from "react";
 import "./Cursor.css";
 import { motion } from "framer-motion";
+import { AppContext } from "../../Context/AppContext";
 
 export default function Cursor() {
   const [position, setPosition] = useState({
     x: 0,
     y: 0,
   });
-
+const {isMenuOn}=useContext(AppContext)
   useEffect(() => {
     const updatePosition = (e) => {
       setPosition({
@@ -37,7 +38,7 @@ export default function Cursor() {
 
   return (
     <>
-      <motion.div className="cursor" variants={variants} animate="default"></motion.div>
+      <motion.div className="cursor" variants={variants} animate="default" style={isMenuOn?{backgroundColor:"white"}:{backgroundColor:"#2596be"}}></motion.div>
     </>
   );
 }

@@ -6,7 +6,7 @@ import { AppContext } from "../../Context/AppContext";
 export default function MainPage() {
   const [inView, setInView] = useState(false);
 
-  const { isRefreshed,setIsBackgroundBlack } = useContext(AppContext);
+  const { isRefreshed,setIsBackgroundBlack,isMenuOn } = useContext(AppContext);
 
   const variants1 = {
     initial: {
@@ -44,6 +44,15 @@ export default function MainPage() {
         transition={{
           ease: "easeIn",
           duration: 0.7,
+        }}
+      ></motion.div>
+      <motion.div
+        variants={variants2}
+        className="blue"
+        initial="initial"
+        animate={isMenuOn ? "animate" : "initial"}
+        transition={{
+          ease: "easeIn",
         }}
       ></motion.div>
 

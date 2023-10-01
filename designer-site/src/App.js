@@ -8,14 +8,14 @@ import WhatWeDo from "./pages/WhatWeDo/WhatWeDo";
 import { AppContext } from "./Context/AppContext";
 import Navbar from "./components/Navbar/Navbar";
 function App() {
-  const { isLoading, setIsLoading} = useContext(AppContext);
+  const { isLoading, setIsLoading,isMenuOn} = useContext(AppContext);
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
   }, []);
   return (
-    <div className={isLoading ? "Loading" : "App"}>
+    <div className={isLoading ? "Loading":isMenuOn? "Loading": "App"}>
       <Loading />
       {!isLoading && <Cursor />}
       <Navbar />
