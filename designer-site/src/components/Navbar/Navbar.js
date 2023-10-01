@@ -1,11 +1,27 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.css";
 import { motion } from "framer-motion";
-import { AppContext } from "../../../Context/AppContext";
+import { AppContext } from "../../Context/AppContext";
 export default function Navbar() {
   const [isMenuHovered, setIsMenuHovered] = useState(false);
   const [IsContactHovered, setIsContactHovered] = useState(false);
-    const { isLoading, setIsLoading,setIsRefreshed } = useContext(AppContext);
+  const [isHide, setIsHide] = useState(false);
+  const { isLoading, setIsLoading, setIsRefreshed } = useContext(AppContext);
+
+  useEffect(() => {
+    const scrollDown = (e) => {
+      if (e.deltaY >= 0) {
+        console.log("Scroll Down");
+        setIsHide(true);
+      } else {
+        console.log("Scroll Up");
+        setIsHide(false);
+
+      }
+    };
+
+    window.addEventListener("wheel", scrollDown);
+  }, []);
 
   function refreshPage() {
     window.location.reload();
@@ -18,8 +34,14 @@ export default function Navbar() {
       y: "-100%",
     },
   };
+
   return (
-    <div className="navbar">
+    <motion.div 
+    variants={variants3} 
+    initial="initial"
+    animate={isHide?"animate":"initial"}
+    transition={{duration:1}}
+    className="navbar">
       <div
         className="menu"
         onMouseEnter={() => {
@@ -112,6 +134,6 @@ export default function Navbar() {
           CONTACT
         </motion.h2>
       </div>
-    </div>
+    </motion.div>
   );
 }

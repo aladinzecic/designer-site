@@ -129,7 +129,7 @@ export default function WhatWeDo() {
           </>
         )}
       </div>
-      <h4>123</h4>
+      <h4>WE’VE AMASSED A FEW AWARDS WITH CLIENTS WHO’VE PUT THEIR FAITH IN US</h4>
     </div>
   );
 }

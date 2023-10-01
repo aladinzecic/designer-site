@@ -6,8 +6,7 @@ import { AppContext } from "../../Context/AppContext";
 export default function MainPage() {
   const [inView, setInView] = useState(false);
 
-  const {isRefreshed } = useContext(AppContext);
-
+  const { isRefreshed } = useContext(AppContext);
 
   const variants1 = {
     initial: {
@@ -46,7 +45,7 @@ export default function MainPage() {
           duration: 0.7,
         }}
       ></motion.div>
-      
+
       <div className="handwriting">
         <svg
           width="2080"
