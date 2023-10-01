@@ -1,24 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./WhatWeDo.css";
 import { transform } from "framer-motion";
 import { motion } from "framer-motion";
+import { AppContext } from "../../Context/AppContext";
 export default function WhatWeDo() {
   const [isHovered, setIsHovered] = useState(0);
+  const { setIsBackgroundBlack } = useContext(AppContext);
+
   useEffect(() => {
     console.log(isHovered);
   });
 
   return (
-    <div className="hero">
+    <motion.div
+      className="hero"
+      
+    >
       <h3>what we do</h3>
       <div
         className="line line1"
         onMouseEnter={() => setIsHovered(1)}
         onMouseLeave={() => setIsHovered(0)}
       >
-        <h1
-        
-        >BRAND & CREATIVE STRATEGY</h1>
+        <h1>BRAND & CREATIVE STRATEGY</h1>
         {isHovered === 1 && (
           <>
             <p className="font">*</p>
@@ -129,7 +133,12 @@ export default function WhatWeDo() {
           </>
         )}
       </div>
-      <h4>WE’VE AMASSED A FEW AWARDS WITH CLIENTS WHO’VE PUT THEIR FAITH IN US</h4>
-    </div>
+      <motion.h4 whileInView={() => {
+        setIsBackgroundBlack(false);
+        console.log(1)
+      }}>
+        WE’VE AMASSED A FEW AWARDS WITH CLIENTS WHO’VE PUT THEIR FAITH IN US
+      </motion.h4>
+    </motion.div>
   );
 }

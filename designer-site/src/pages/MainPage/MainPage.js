@@ -6,7 +6,7 @@ import { AppContext } from "../../Context/AppContext";
 export default function MainPage() {
   const [inView, setInView] = useState(false);
 
-  const { isRefreshed } = useContext(AppContext);
+  const { isRefreshed,setIsBackgroundBlack } = useContext(AppContext);
 
   const variants1 = {
     initial: {
@@ -34,7 +34,8 @@ export default function MainPage() {
   };
 
   return (
-    <div className="hero-div">
+    <motion.div className="hero-div"
+    whileInView={()=>{setIsBackgroundBlack(true)}}>
       <motion.div
         variants={variants2}
         className="gray"
@@ -138,6 +139,6 @@ export default function MainPage() {
           OF IDEAS
         </motion.p>
       </div>
-    </div>
+    </motion.div>
   );
 }

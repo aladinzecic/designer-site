@@ -8,7 +8,7 @@ import WhatWeDo from "./pages/WhatWeDo/WhatWeDo";
 import { AppContext } from "./Context/AppContext";
 import Navbar from "./components/Navbar/Navbar";
 function App() {
-  const { isLoading, setIsLoading } = useContext(AppContext);
+  const { isLoading, setIsLoading} = useContext(AppContext);
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <MainPage />
       <Illustration />
-      <WhatWeDo />
+      <WhatWeDo/>
     </div>
   );
 }

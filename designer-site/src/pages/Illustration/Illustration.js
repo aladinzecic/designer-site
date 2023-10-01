@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useContext } from "react";
 import "./Illustration.css";
+import { AppContext } from "../../Context/AppContext";
+import { motion } from "framer-motion";
 export default function Illustration() {
   const [scroll, setScroll] = useState(1);
+  const {setIsBackgroundBlack}=useContext(AppContext)
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -25,7 +28,7 @@ export default function Illustration() {
   }, []);
 
   return (
-    <div className="main">
+    <motion.div className="main" whileInView={()=>{setIsBackgroundBlack(true)}}>
       <div className="left">
         <div className="img-div">
           {scroll === 1 ? (
@@ -82,6 +85,6 @@ export default function Illustration() {
             ></img>
           </div>
         </div> */}
-    </div>
+    </motion.div>
   );
 }
