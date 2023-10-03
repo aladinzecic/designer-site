@@ -133,12 +133,16 @@ export default function WhatWeDo() {
           </>
         )}
       </div>
-      <motion.h4 whileInView={() => {
+      <motion.h3 whileInView={() => {
         setIsBackgroundBlack(false);
-        console.log(1)
-      }}>
+        
+      }}
+      style={{marginTop:"40px"}}>
         WE’VE AMASSED A FEW AWARDS WITH CLIENTS WHO’VE PUT THEIR FAITH IN US
-      </motion.h4>
+      </motion.h3>
+      <div>
+        
+      </div>
     </motion.div>
   );
 }

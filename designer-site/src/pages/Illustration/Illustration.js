@@ -32,7 +32,7 @@ export default function Illustration() {
       <div className="left">
         <div className="img-div">
           {scroll === 1 ? (
-            <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64ba9142443f47cb0594a5f9_Illumination_illustration.svg"></img>
+            <motion.img   src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64ba9142443f47cb0594a5f9_Illumination_illustration.svg"></motion.img>
           ) : scroll === 2 ? (
             <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64ba9142207f66103ef37397_Creation_illustration.svg"></img>
           ) : (
