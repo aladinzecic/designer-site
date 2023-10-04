@@ -66,6 +66,11 @@
   font-weight: 800;
   font-stretch: expanded;
 }
+.lines h1::selection {
+  background-color: #fff;
+  color: black;
+}
+
 .liness p {
   color: white;
   font-size: 120px;
@@ -73,6 +78,10 @@
   font-weight: 300;
   margin-top: 60px;
   z-index: 1000;
+}
+.liness p::selection {
+  background-color: #fff;
+  color: black;
 }
 
 .handwriting {

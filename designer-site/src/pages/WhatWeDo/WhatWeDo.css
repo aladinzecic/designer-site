@@ -5,13 +5,17 @@
 }
 .hero {
   overflow: hidden;
-  height: 110vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .hero h3{
   margin: auto;
+}
+.hero h3::selection{
+  background-color: black;
+  color: #fff;
 }
 .font {
   font-family: "Shadows Into Light", cursive;
@@ -107,6 +111,10 @@ margin-top: 66px;
 }
 .line:hover p{
 margin-top: 66px;
+}
+
+.sponsors{
+  margin: auto;
 }
 
 @keyframes leftfour {

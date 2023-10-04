@@ -86,6 +86,9 @@ export default function Navbar() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         onClick={() => {
+          window.scrollTo({
+            top:0
+          })
           setIsRefreshed(true);
           setIsLoading(true);
           setTimeout(() => {

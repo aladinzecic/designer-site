@@ -1,0 +1,77 @@
+.video-page {
+  height: 130vh;
+  background-color: black;
+}
+.up {
+    padding-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+z-index: 1;
+}
+.up h1:nth-child(2) {
+  color: #fff;
+  font-size: 120px;
+  -webkit-transform: scale(1.5, 1.1);
+  font-weight: 800;
+  margin-top: -80px;
+  z-index: 10;
+
+}
+.up h1::selection,.down-right h1::selection,.down-right p::selection{
+    background-color: #fff;
+    color: black;
+}
+.up h1:nth-child(1) {
+  color: #fff;
+  font-size: 100px;
+  -webkit-transform: scale(1.5, 1.1);
+  font-weight: lighter;
+}
+.down {
+  width: 80%;
+  display: flex;
+}
+.down-left {
+  width: 35%;
+  margin: auto;
+  z-index: 1000;
+
+}
+.down-left video {
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+}
+.down-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.down-right h1 {
+  color: #fff;
+  font-size: 32px;
+  -webkit-transform: scale(1.2, 2);
+  font-weight: 400;
+}
+.down-right h1:nth-child(2) {
+  margin-top: -5px;
+}
+.down-right p {
+  color: #fff;
+  font-size: 18px;
+}
+.img-divs{
+    width: 70%;
+    position: absolute;
+    height: 110vh;
+    left: -100px;
+    margin-top: 100px;
+}
+.img-divs img{
+    width: 100%;
+    z-index: 101;
+}
