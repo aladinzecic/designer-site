@@ -64,14 +64,14 @@ z-index: 1;
   color: #fff;
   font-size: 18px;
 }
-.img-divs{
+.img-divss{
     width: 70%;
     position: absolute;
     height: 110vh;
     left: -100px;
-    margin-top: 100px;
+    margin-top: -100px;
 }
-.img-divs img{
+.img-divss svg{
     width: 100%;
     z-index: 101;
 }

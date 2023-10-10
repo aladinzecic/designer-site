@@ -5,7 +5,8 @@ import { AppContext } from "../../Context/AppContext";
 export default function Navbar() {
   const [isMenuHovered, setIsMenuHovered] = useState(false);
   const [IsContactHovered, setIsContactHovered] = useState(false);
-  const [isHide, setIsHide] = useState(false);
+  const [isHide, setIsHide] = useState(true);
+  
   const {
     setIsLoading,
     setIsRefreshed,
@@ -17,6 +18,9 @@ export default function Navbar() {
   } = useContext(AppContext);
 
   useEffect(() => {
+    setTimeout(()=>{
+      setIsHide(false)
+    },3000)
     const scrollDown = (e) => {
       if (e.deltaY >= 0) {
         console.log("Scroll Down");
