@@ -64,14 +64,20 @@ z-index: 1;
   color: #fff;
   font-size: 18px;
 }
-.img-divss{
+.handwritingV2{
     width: 70%;
     position: absolute;
     height: 110vh;
     left: -100px;
-    margin-top: -100px;
+    margin-top: 50px;
+    z-index: 10;
 }
-.img-divss svg{
+.handwritingV2 svg{
     width: 100%;
     z-index: 101;
+}
+.handwritingV2 path{
+  stroke-width: 25;
+  stroke: #2596be;
+  stroke-dasharray: 15632;
 }

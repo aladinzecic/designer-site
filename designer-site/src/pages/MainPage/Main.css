@@ -97,9 +97,23 @@
   height: 100%;
   object-fit: contain;
 }
+.handwriting path {
+    stroke: #2596be;
+    stroke-width: 25;
+    stroke-dasharray: 13267; 
+     animation: 1.4s handwriting1 linear forwards;
+  }
 
 @keyframes left {
   100% {
     transform: translateX(0vw);
+  }
+}
+@keyframes handwriting1 {
+  0% {
+    stroke-dashoffset: 13267;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
