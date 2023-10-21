@@ -1,6 +1,7 @@
 .video-page {
   height: 130vh;
   background-color: black;
+  position: relative;
 }
 .up {
     padding-top: 3vh;

@@ -23,6 +23,7 @@ export default function VideoPage() {
           viewBox="0 0 2665 1739"
           shape-rendering="geometricPrecision"
           text-rendering="geometricPrecision"
+
         >
           <motion.path
             variants={variants8}
