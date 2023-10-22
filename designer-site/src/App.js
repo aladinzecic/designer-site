@@ -8,6 +8,7 @@ import WhatWeDo from "./pages/WhatWeDo/WhatWeDo";
 import { AppContext } from "./Context/AppContext";
 import Navbar from "./components/Navbar/Navbar";
 import VideoPage from "./pages/VideoPage/VideoPage";
+import Offers from "./pages/Offers/Offers";
 function App() {
   const { isLoading, setIsLoading,isMenuOn} = useContext(AppContext);
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
       <Illustration />
       <WhatWeDo/>
       <VideoPage/>
+      <Offers></Offers>
     </div>
   );
 }
