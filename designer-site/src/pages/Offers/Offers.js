@@ -10,6 +10,22 @@ export default function Offers() {
       marginLeft: "0",
     },
   };
+  const variants10 = {
+    initial: {
+      marginTop: "60px",
+    },
+    animate: {
+      marginTop: "0",
+    },
+  };
+  const variants11 = {
+    initial: {
+      width: "0px",
+    },
+    animate: {
+      width: "100%",
+    },
+  };
   return (
     <div className="offers">
       <div className="up-offer">
@@ -26,34 +42,127 @@ export default function Offers() {
         </div>
       </div>
       <div className="down-offer">
-        <div className="img-offer">
-          <motion.img
-            variants={variants9}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            transition={{
+        <div className="down-left-offer">
+          <div className="img-offer">
+            <motion.img
+              variants={variants9}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              transition={{
                 delay: 0.5,
-                duration: 0.8,
+                duration: 0.5,
               }}
-            src="https://assets-global.website-files.com/64c29599af562adb656080df/64c29599af562adb6560814f_IMG_0849-p-500.jpg"
-            alt="img"
-          ></motion.img>
+              src="https://assets-global.website-files.com/64c29599af562adb656080df/64c29599af562adb6560814f_IMG_0849-p-500.jpg"
+              alt="img"
+            ></motion.img>
+          </div>
+          <div className="img-offer">
+            <motion.img
+              variants={variants9}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              transition={{
+                delay: 0.5,
+                duration: 0.5,
+              }}
+              src="https://assets-global.website-files.com/64c29599af562adb656080df/64c29599af562adb6560814e_IMG_0858-p-500.jpg"
+              alt="img"
+            ></motion.img>
+          </div>
         </div>
-        <div className="img-offer">
-          <motion.img
-            variants={variants9}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            transition={{
-                delay: 0.5,
-                duration: 0.8,
+        <div className="offer-offers">
+          <div className="hidden">
+            <motion.h1
+              variants={variants10}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              transition={{
+                delay: 1,
+                duration: 0.5,
               }}
-            
-            src="https://assets-global.website-files.com/64c29599af562adb656080df/64c29599af562adb6560814e_IMG_0858-p-500.jpg"
-            alt="img"
-          ></motion.img>
+            >
+              LAUNCH A BRAND THAT’S DIFFERENT AND CREDIBLE
+            </motion.h1>
+          </div>
+          <hr/>
+          <div className="hidden">
+            <motion.h1
+              variants={variants10}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              transition={{
+                delay: 1,
+                duration: 0.5,
+              }}
+            >
+              REFRESH A BRAND TO BUILD LOYALTY
+            </motion.h1>
+          </div>
+          <hr />
+          <div className="hidden">
+            <motion.h1
+              variants={variants10}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              transition={{
+                delay: 1,
+                duration: 0.5,
+              }}
+            >
+              RE-ENERGIZE A BRAND THROUGH EXTENSION
+            </motion.h1>
+          </div>
+          <hr />
+          <div className="hidden">
+            <motion.h1
+              variants={variants10}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              transition={{
+                delay: 1,
+                duration: 0.5,
+              }}
+            >
+              RE-ACTIVATE A BRAND THROUGH EXPERIENCE
+            </motion.h1>
+          </div>
+          <hr />
+          <div className="hidden">
+            <motion.h1
+              variants={variants10}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              transition={{
+                delay: 1,
+                duration: 0.5,
+              }}
+            >
+              EMBRACE SHIFTS IN CULTURE AND NEED
+            </motion.h1>
+          </div>
+          <hr />
+          <div className="hidden">
+            <motion.h1
+              variants={variants10}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              transition={{
+                delay: 1,
+                duration: 0.5,
+              }}
+            >
+              MAKE AUDIENCES FALL IN LOVE WITH YOU
+            </motion.h1>
+          </div>
+          <hr />
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
 .Loading{
   overflow-y: hidden;
   height: 100vh!important;
+  overflow-x: hidden;
 }
 .App-logo {
   height: 40vmin;
