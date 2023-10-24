@@ -20,7 +20,7 @@ export default function Offers() {
   };
   const variants11 = {
     initial: {
-      width: "0px",
+      width: "0%",
     },
     animate: {
       width: "100%",
@@ -87,7 +87,16 @@ export default function Offers() {
               LAUNCH A BRAND THAT’S DIFFERENT AND CREDIBLE
             </motion.h1>
           </div>
-          <hr/>
+          <motion.hr
+            variants={variants11}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            transition={{
+              delay: 1.05,
+              duration: 0.5,
+            }}
+          />
           <div className="hidden">
             <motion.h1
               variants={variants10}
@@ -95,14 +104,23 @@ export default function Offers() {
               whileInView="animate"
               viewport={{ once: true }}
               transition={{
-                delay: 1,
+                delay: 1.1,
                 duration: 0.5,
               }}
             >
               REFRESH A BRAND TO BUILD LOYALTY
             </motion.h1>
           </div>
-          <hr />
+          <motion.hr
+            variants={variants11}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            transition={{
+              delay: 1.15,
+              duration: 0.5,
+            }}
+          />
           <div className="hidden">
             <motion.h1
               variants={variants10}
@@ -110,14 +128,23 @@ export default function Offers() {
               whileInView="animate"
               viewport={{ once: true }}
               transition={{
-                delay: 1,
+                delay: 1.2,
                 duration: 0.5,
               }}
             >
               RE-ENERGIZE A BRAND THROUGH EXTENSION
             </motion.h1>
           </div>
-          <hr />
+          <motion.hr
+            variants={variants11}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            transition={{
+              delay: 1.25,
+              duration: 0.5,
+            }}
+          />
           <div className="hidden">
             <motion.h1
               variants={variants10}
@@ -125,14 +152,23 @@ export default function Offers() {
               whileInView="animate"
               viewport={{ once: true }}
               transition={{
-                delay: 1,
+                delay: 1.3,
                 duration: 0.5,
               }}
             >
               RE-ACTIVATE A BRAND THROUGH EXPERIENCE
             </motion.h1>
           </div>
-          <hr />
+          <motion.hr
+            variants={variants11}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            transition={{
+              delay: 1.35,
+              duration: 0.5,
+            }}
+          />
           <div className="hidden">
             <motion.h1
               variants={variants10}
@@ -140,14 +176,23 @@ export default function Offers() {
               whileInView="animate"
               viewport={{ once: true }}
               transition={{
-                delay: 1,
+                delay: 1.4,
                 duration: 0.5,
               }}
             >
               EMBRACE SHIFTS IN CULTURE AND NEED
             </motion.h1>
           </div>
-          <hr />
+          <motion.hr
+            variants={variants11}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            transition={{
+              delay: 1.45,
+              duration: 0.5,
+            }}
+          />
           <div className="hidden">
             <motion.h1
               variants={variants10}
@@ -155,14 +200,23 @@ export default function Offers() {
               whileInView="animate"
               viewport={{ once: true }}
               transition={{
-                delay: 1,
+                delay: 1.5,
                 duration: 0.5,
               }}
             >
               MAKE AUDIENCES FALL IN LOVE WITH YOU
             </motion.h1>
           </div>
-          <hr />
+          <motion.hr
+            variants={variants11}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            transition={{
+              delay: 1.55,
+              duration: 0.5,
+            }}
+          />
         </div>
       </div>
     </div>
