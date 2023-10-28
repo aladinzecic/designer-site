@@ -6,7 +6,7 @@ import { AppContext } from "../../Context/AppContext";
 export default function MainPage() {
   const [inView, setInView] = useState(false);
 
-  const { isRefreshed, setIsBackgroundBlack, isMenuOn, isLoading } =
+  const { isRefreshed, setIsBackgroundBlack, isMenuOn,setIsMenuOn, isLoading } =
     useContext(AppContext);
 
   const variants1 = {
@@ -33,6 +33,14 @@ export default function MainPage() {
       marginLeft: "0vw",
     },
   };
+  const variants3 = {
+    initial: {
+      marginTop: "400%",
+    },
+    animate: {
+      marginTop: "40px",
+    },
+  };
 
   return (
     <motion.div
@@ -57,9 +65,76 @@ export default function MainPage() {
         initial="initial"
         animate={isMenuOn ? "animate" : "initial"}
         transition={{
-          ease: "easeIn",
+          ease: "easeOut",
+          duration: 0.8,
         }}
-      ></motion.div>
+      >
+        <div className="blue-row">
+          <motion.h1
+            variants={variants3}
+            animate={isMenuOn ? "animate" : "initial"}
+            viewport={{ once: true }}
+            transition={{
+              ease: "linear",
+              duration: 0.9,
+              delay: 0.1,
+            }}
+            onClick={() => {
+              setIsMenuOn(false)
+              setTimeout(()=>{
+                window.scrollTo({
+                  top:560,
+                  behavior: "smooth",
+                });
+              },800)
+            }}
+          >
+            ILLUSTRATION
+          </motion.h1>
+        </div>
+        <div className="blue-row">
+          <motion.h1
+            variants={variants3}
+            animate={isMenuOn ? "animate" : "initial"}
+            viewport={{ once: true }}
+            transition={{
+              ease: "linear",
+              duration: 0.9,
+              delay: 0.3,
+            }}
+          >
+            WHAT WE DO
+          </motion.h1>
+        </div>
+        <div className="blue-row">
+          <motion.h1
+            variants={variants3}
+            animate={isMenuOn ? "animate" : "initial"}
+            viewport={{ once: true }}
+            transition={{
+              ease: "linear",
+              duration: 0.9,
+              delay: 0.5,
+            }}
+          >
+            VIDEO
+          </motion.h1>
+        </div>
+        <div className="blue-row">
+          <motion.h1
+            variants={variants3}
+            animate={isMenuOn ? "animate" : "initial"}
+            viewport={{ once: true }}
+            transition={{
+              ease: "linear",
+              duration: 0.9,
+              delay: 0.7,
+            }}
+          >
+            OFFERS
+          </motion.h1>
+        </div>
+      </motion.div>
 
       <div className="handwriting">
         {isLoading == false && (

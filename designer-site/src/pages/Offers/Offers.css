@@ -20,6 +20,10 @@
   transform: scale(1.4, 1.2);
   margin-left: 25%;
 }
+.up-text h1::selection{
+  background-color: black;
+  color: #fff;
+}
 .up-text h1:nth-child(2),
 .up-text h1:nth-child(3) {
   margin-top: -60px;
@@ -42,6 +46,9 @@
   height: 200px;
   width: 160px;
 }
+.offer-offers{
+  margin-left:5% ;
+}
 
 .offer-offers hr{
   margin-top: -20px;
@@ -56,4 +63,8 @@ font-weight: normal;
 margin-top: 0px;
 height: 50px;
 
+}
+.hidden h1::selection{
+  background-color: black;
+  color: #fff;
 }

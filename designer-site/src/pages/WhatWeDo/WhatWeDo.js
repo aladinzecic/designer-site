@@ -6,16 +6,10 @@ import { AppContext } from "../../Context/AppContext";
 export default function WhatWeDo() {
   const [isHovered, setIsHovered] = useState(0);
   const { setIsBackgroundBlack } = useContext(AppContext);
-
-  useEffect(() => {
-    console.log(isHovered);
-  });
+  const [cursorPosition, setCursorPosition] = useState(0);
 
   return (
-    <motion.div
-      className="hero"
-      
-    >
+    <motion.div className="hero">
       <h3>what we do</h3>
       <div
         className="line line1"
@@ -97,8 +91,8 @@ export default function WhatWeDo() {
       </div>
       <div
         className="line line5"
-        onMouseEnter={() => setIsHovered(5)}
-        onMouseLeave={() => setIsHovered(0)}
+        onMouseOver={() => setIsHovered(5)}
+        onMouseOut={() => setIsHovered(0)}
       >
         <h1>BRAND PACKAGING</h1>
         {isHovered === 5 && (
@@ -133,21 +127,22 @@ export default function WhatWeDo() {
           </>
         )}
       </div>
-      <motion.h3 whileInView={() => {
-        setIsBackgroundBlack(false);
-        
-      }}
-      style={{marginTop:"40px"}}>
+      <motion.h3
+        whileInView={() => {
+          setIsBackgroundBlack(false);
+        }}
+        style={{ marginTop: "40px" }}
+      >
         WE’VE AMASSED A FEW AWARDS WITH CLIENTS WHO’VE PUT THEIR FAITH IN US
       </motion.h3>
       <div className="sponsors">
         <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75b82020c34ca922f8c_Design%20Week.svg"></img>
-      <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75b087721a85469e564_Clio.svg"></img>
-      <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75bee9a2779957857b5_Dieline.svg"></img>
-      <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75c7dee090e879d0b11_D%26AD.svg"></img>
-      <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75b236708cf047edf20_DBA.svg"></img>
-      <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75bb2a7903e5717f9af_The%20Drum.svg"></img>
-      <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75b541b392ebc0475e0_Pentawards.svg"></img>
+        <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75b087721a85469e564_Clio.svg"></img>
+        <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75bee9a2779957857b5_Dieline.svg"></img>
+        <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75c7dee090e879d0b11_D%26AD.svg"></img>
+        <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75b236708cf047edf20_DBA.svg"></img>
+        <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75bb2a7903e5717f9af_The%20Drum.svg"></img>
+        <img src="https://assets.website-files.com/64ae62aeb628eb7f18f1d79c/64b6b75b541b392ebc0475e0_Pentawards.svg"></img>
       </div>
     </motion.div>
   );

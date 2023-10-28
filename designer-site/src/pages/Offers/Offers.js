@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Offers.css";
 import { motion } from "framer-motion";
+import { AppContext } from "../../Context/AppContext";
 export default function Offers() {
+  const { setIsBackgroundBlack } = useContext(AppContext);
+
   const variants9 = {
     initial: {
       marginLeft: "-100%",
@@ -43,7 +46,7 @@ export default function Offers() {
       </div>
       <div className="down-offer">
         <div className="down-left-offer">
-          <div className="img-offer">
+          <motion.div className="img-offer">
             <motion.img
               variants={variants9}
               initial="initial"
@@ -56,7 +59,7 @@ export default function Offers() {
               src="https://assets-global.website-files.com/64c29599af562adb656080df/64c29599af562adb6560814f_IMG_0849-p-500.jpg"
               alt="img"
             ></motion.img>
-          </div>
+          </motion.div>
           <div className="img-offer">
             <motion.img
               variants={variants9}
@@ -138,14 +141,16 @@ export default function Offers() {
           <motion.hr
             variants={variants11}
             initial="initial"
-            whileInView="animate"
+            whileInView={"animate"}
             viewport={{ once: true }}
             transition={{
               delay: 1.25,
               duration: 0.5,
             }}
           />
-          <div className="hidden">
+          <motion.div className="hidden"
+           whileInView={()=>{setIsBackgroundBlack(false)}}
+          >
             <motion.h1
               variants={variants10}
               initial="initial"
@@ -158,7 +163,7 @@ export default function Offers() {
             >
               RE-ACTIVATE A BRAND THROUGH EXPERIENCE
             </motion.h1>
-          </div>
+          </motion.div>
           <motion.hr
             variants={variants11}
             initial="initial"
