@@ -45,7 +45,7 @@
 .blue h1 {
   height: 90px;
   margin-top: 100%;
-  font-family: 800;
+  font-weight: 800;
   font-size: 60px;
   transform: scale(1.6, 1.8);
   display: flex;

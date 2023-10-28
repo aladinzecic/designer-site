@@ -83,7 +83,7 @@ export default function MainPage() {
               setIsMenuOn(false)
               setTimeout(()=>{
                 window.scrollTo({
-                  top:560,
+                  top:window.innerHeight-40,
                   behavior: "smooth",
                 });
               },800)
@@ -102,6 +102,15 @@ export default function MainPage() {
               duration: 0.9,
               delay: 0.3,
             }}
+            onClick={() => {
+              setIsMenuOn(false)
+              setTimeout(()=>{
+                window.scrollTo({
+                  top:window.innerHeight*4-50,
+                  behavior: "smooth",
+                });
+              },800)
+            }}
           >
             WHAT WE DO
           </motion.h1>
@@ -116,8 +125,17 @@ export default function MainPage() {
               duration: 0.9,
               delay: 0.5,
             }}
+            onClick={() => {
+              setIsMenuOn(false)
+              setTimeout(()=>{
+                window.scrollTo({
+                  top:window.innerHeight*6-350,
+                  behavior: "smooth",
+                });
+              },800)
+            }}
           >
-            VIDEO
+            VIDEO 
           </motion.h1>
         </div>
         <div className="blue-row">
@@ -129,6 +147,15 @@ export default function MainPage() {
               ease: "linear",
               duration: 0.9,
               delay: 0.7,
+            }}
+            onClick={() => {
+              setIsMenuOn(false)
+              setTimeout(()=>{
+                window.scrollTo({
+                  top:window.innerHeight*7-250,
+                  behavior: "smooth",
+                });
+              },800)
             }}
           >
             OFFERS
