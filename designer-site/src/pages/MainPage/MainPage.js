@@ -70,7 +70,7 @@ export default function MainPage() {
         }}
       >
         <div className="blue-row">
-          <motion.h1
+          {isMenuOn&&<motion.h1
             variants={variants3}
             animate={isMenuOn ? "animate" : "initial"}
             viewport={{ once: true }}
@@ -90,10 +90,10 @@ export default function MainPage() {
             }}
           >
             ILLUSTRATION
-          </motion.h1>
+          </motion.h1>}
         </div>
         <div className="blue-row">
-          <motion.h1
+          {isMenuOn&&<motion.h1
             variants={variants3}
             animate={isMenuOn ? "animate" : "initial"}
             viewport={{ once: true }}
@@ -113,10 +113,10 @@ export default function MainPage() {
             }}
           >
             WHAT WE DO
-          </motion.h1>
+          </motion.h1>}
         </div>
         <div className="blue-row">
-          <motion.h1
+          {isMenuOn&&<motion.h1
             variants={variants3}
             animate={isMenuOn ? "animate" : "initial"}
             viewport={{ once: true }}
@@ -136,10 +136,10 @@ export default function MainPage() {
             }}
           >
             VIDEO 
-          </motion.h1>
+          </motion.h1>}
         </div>
         <div className="blue-row">
-          <motion.h1
+          {isMenuOn&&<motion.h1
             variants={variants3}
             animate={isMenuOn ? "animate" : "initial"}
             viewport={{ once: true }}
@@ -159,7 +159,7 @@ export default function MainPage() {
             }}
           >
             OFFERS
-          </motion.h1>
+          </motion.h1>}
         </div>
       </motion.div>
 

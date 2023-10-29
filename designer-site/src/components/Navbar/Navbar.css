@@ -1,5 +1,6 @@
 .navbar {
   height: 10vh;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   background-color: transparent;
@@ -12,6 +13,7 @@
 .contacts {
   height: 5vh;
   margin-top: 2.5vh;
+  width: auto;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -29,7 +31,7 @@
 .navbar svg {
   margin-top: 2vh;
   height: 6vh;
-  width: 500px;
+  width: 50%;
   z-index: 555555;
 }
 
