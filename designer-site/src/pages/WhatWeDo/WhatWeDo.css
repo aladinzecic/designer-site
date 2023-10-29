@@ -10,23 +10,21 @@
   flex-direction: column;
   justify-content: center;
 }
-.hero h3{
+.hero h3 {
   margin: auto;
 }
-.hero h3::selection{
+.hero h3::selection {
   background-color: black;
   color: #fff;
 }
 .font {
   font-family: "Shadows Into Light", cursive;
 }
-.nott{
-    transform:scale(1,1.3) ;
-
+.nott {
+  transform: scale(1, 1.3);
 }
-.line:hover:not(.nott){
-    transform:scale(1.3,1.3) ;
-
+.line:hover:not(.nott) {
+  transform: scale(1.3, 1.3);
 }
 .line {
   height: 100px;
@@ -40,14 +38,15 @@
   background-color: #2596be;
   justify-content: start;
 }
-.line:hover h1{
+.line:hover h1 {
   font-weight: 900;
-font-stretch: extra-expanded;}
+  font-stretch: extra-expanded;
+}
 .line1:hover {
   width: 217vw;
 }
 .line1:hover h1 {
-  animation: leftone 16s linear infinite,transform 0s;
+  animation: leftone 16s linear infinite, transform 0s;
 }
 .line1:hover p {
   animation: leftone 16s linear infinite;
@@ -106,16 +105,18 @@ font-stretch: extra-expanded;}
   font-size: 80px;
 }
 
-.line:hover p{
-margin-top: 66px;
+.line:hover p {
+  margin-top: 66px;
 }
-.line:hover p{
-margin-top: 66px;
+.line:hover p {
+  margin-top: 66px;
 }
 
-.sponsors{
-  margin: auto;
-}
+.sponsors {
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+justify-content: center;}
 
 @keyframes leftfour {
   100% {
@@ -145,5 +146,73 @@ margin-top: 66px;
 @keyframes leftsix {
   100% {
     transform: translateX(-104vw);
+  }
+}
+
+@media (max-width: 760px) {
+  .line h1 {
+    font-size: 50px;
+    font-weight: 300;
+    transform: scale(0.8, 1.1);
+  }
+  .line {
+    margin-top: 20px;
+    height: 130;
+  }
+  .hero {
+    height: 162vh;
+  }
+  .hero h3 {
+    margin-top: 40px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  .sponsors {
+padding: auto;
+  }
+}
+@media (max-width: 540px) {
+  .line h1 {
+    font-size: 40px;
+    font-weight: 300;
+    transform: scale(0.8, 1.1);
+  }
+  .line {
+    margin-top: 30px;
+    height: 150;
+  }
+  .hero {
+    height: 180vh;
+  }
+  .hero h3 {
+    margin-top: 40px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+}
+@media (max-width: 351px) {
+  .line h1 {
+    font-size: 32px;
+    font-weight: 300;
+    transform: scale(0.8, 1.1);
+  }
+  .line {
+    margin-top: -10px;
+    height: 150;
+  }
+  .hero {
+    height: 240vh;
+  }
+  .hero h3 {
+    margin-top: 40px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  .sponsors img{
+    width: 150px;
+    height: auto;
   }
 }

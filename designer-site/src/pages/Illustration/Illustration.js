@@ -78,8 +78,8 @@ export default function Illustration() {
           </div>
         </>
       )}
-      :
-      {
+      
+      {isMobile &&
         <div className="three">
           <div className="full">
             <h4>PART I</h4>

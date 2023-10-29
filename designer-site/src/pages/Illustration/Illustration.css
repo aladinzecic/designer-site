@@ -104,3 +104,10 @@ display: flex;
   width: 80%;
   margin-top: 20vh;
 }
+
+@media (min-width: 500px) and (max-width: 760px) {
+  .full img{
+    margin-top: 10vh;
+    width: 70%;
+  }
+}
