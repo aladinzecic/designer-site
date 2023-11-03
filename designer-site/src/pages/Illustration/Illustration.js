@@ -4,8 +4,8 @@ import { AppContext } from "../../Context/AppContext";
 import { motion } from "framer-motion";
 export default function Illustration() {
   const [scroll, setScroll] = useState(1);
-  const { setIsBackgroundBlack } = useContext(AppContext);
-  const [isMobile, setMobile] = useState(window.innerWidth < 760);
+  const { setIsBackgroundBlack,isMobile } = useContext(AppContext);
+  
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;

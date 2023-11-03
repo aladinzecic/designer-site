@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar/Navbar";
 import VideoPage from "./pages/VideoPage/VideoPage";
 import Offers from "./pages/Offers/Offers";
 function App() {
-  const { isLoading, setIsLoading,isMenuOn} = useContext(AppContext);
+  const { isLoading, setIsLoading,isMenuOn,isMobile} = useContext(AppContext);
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className={isLoading ? "Loading":isMenuOn? "Loading": "App"}>
       <Loading />
-      {!isLoading && <Cursor />}
+      {!isLoading && !isMobile && <Cursor />}
       <Navbar />
       <MainPage />
       <Illustration />

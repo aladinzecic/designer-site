@@ -6,7 +6,7 @@ function ContextProvider({ children }) {
   const [isRefreshed, setIsRefreshed] = useState(false);
   const [isBackgroundBlack, setIsBackgroundBlack] = useState(true);
   const [isMenuOn, setIsMenuOn] = useState(false);
-
+  const [isMobile,setIsMobile] = useState(window.innerWidth < 760);
   const values = {
     isLoading,
     setIsLoading,
@@ -15,7 +15,8 @@ function ContextProvider({ children }) {
     isBackgroundBlack,
     setIsBackgroundBlack,
     setIsMenuOn,
-    isMenuOn
+    isMenuOn,
+    isMobile
   };
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
 }
